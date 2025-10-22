@@ -1,5 +1,5 @@
 {% set name = "giturlparse" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/giturlparse-{{ version }}.tar.gz
-  sha256: c0fff7c21acc435491b1779566e038757a205c1ffdcb47e4f81ea52ad8c3859a
+  sha256: f624251a2129595da32b282533802eb8db4a822f9ec64bb6c38bdf14ac1ff0e1
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
