@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: giturlparse
-  version: 0.14.0
+  version: "0.15.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/giturlparse-${{ version }}.tar.gz
-  sha256: 0a13208cb3f60e067ee3d09d28e01f9c936065986004fa2d5cd6db7758e9f6e6
+  sha256: 9af3f1fd5c4a0cac94ddb283593635005646393ee0debbe330d1bdff8866bf2c
 
 build:
   number: 0
